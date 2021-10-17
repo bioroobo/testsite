@@ -5,5 +5,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    print(request)
+    # print(dir(request))
     return HttpResponse('Hello index!')
+
+def test(request):
+    return HttpResponse('<h1>Test page!</h1>')
