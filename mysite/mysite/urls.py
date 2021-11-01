@@ -21,7 +21,7 @@ from mysite import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('news/',  include('news.urls')),
+    path('',  include('news.urls')),
 ]
 
 # in debug mode we create a route and django will give media files along this route
