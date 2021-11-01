@@ -9,6 +9,6 @@ def index(request):
     context = {
         'news': news,
         'title': 'News List',
-        'category': categories,
+        'categories': categories,
     }
     return render(request, template_name='news/index.html', context=context)
