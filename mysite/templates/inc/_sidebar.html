@@ -5,3 +5,12 @@
     <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">{{ item.title }}</a>
     {% endfor %}
 </div>
+
+<br>
+
+<!-- весь код выше можно удалить, вместо него :-->
+{% show_categories arg2='User' arg1='Hi' %}
+
+<!--если записать без аргументов:
+{% show_categories %}
+то будет выводить: Hello world -->
