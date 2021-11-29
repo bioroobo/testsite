@@ -1,4 +1,5 @@
 {% load news_tags %}
+{% comment %}
 <div class="list-group">
     {% get_list_categories as categories %}
     {% for item in categories %}
@@ -7,10 +8,8 @@
 </div>
 
 <br>
+{% endcomment %}
 
-<!-- весь код выше можно удалить, вместо него :-->
+{# show_categories #}
+
 {% show_categories arg2='User' arg1='Hi' %}
-
-<!--если записать без аргументов:
-{% show_categories %}
-то будет выводить: Hello world -->
